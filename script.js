@@ -1,5 +1,5 @@
 // Define our global function
-var Coaster = function() {
+var Keratin = function() {
 
 	// Dataset object
 	this.Dataset = function(data, options) {
