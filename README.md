@@ -25,7 +25,7 @@ To use the component, include first the underscorejs library and then the javasc
 </html>
 ````
 
-Example
+Examples
 
 ```javascript
 
