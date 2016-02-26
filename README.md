@@ -47,5 +47,5 @@ data.add([
 
 data.update({id: 2, text: 'Testing this again.'});
 
-```javascript
+```
 	
