@@ -48,4 +48,17 @@ data.add([
 data.update({id: 2, text: 'Testing this again.'});
 
 ```
-	
+
+Methods
+
+	add(data)
+
+	update(data)
+
+	get(data)
+	get(id, [,data])
+	get(ids, [,data])
+
+
+	remove(id)
+	removeAll()
