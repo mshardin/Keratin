@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="script.js"></script>
+
+<script type="text/javascript">
+
+var data = new Coaster().Dataset();
+
+data.add([
+  {id: 1, text: 'item 1', date: new Date(2013, 6, 20), group: 1, first: true},
+  {id: 2, text: 'item 2', date: '2013-06-23', group: 2},
+  {id: 3, text: 'item 3', date: '2013-06-25', group: 2},
+  {id: 4, text: 'item 4'}
+]);
+
+data.on('update', function(ev, properties, senderId) {
+	console.log('event:', ev, 'properties:', properties, 'senderId:', senderId);
+});
+
+data.update({id: 2, text: 'Testing this again.'});
+
+console.log(data);
+
+</script>
+
+</body>
+</html>
